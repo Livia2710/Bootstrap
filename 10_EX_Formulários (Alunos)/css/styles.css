@@ -14,7 +14,7 @@ body {
 
 /* Estilos especificos para larguras de tela maiores ou iguais a 768px */
 @media(min-width: 768px) {
-    #form--container {
+    #form-container {
         margin: 50px auto;
         padding: 50px;
     }
@@ -42,9 +42,21 @@ body {
     padding-bottom: 50px;
 }
 
+/* Estilos para o formulario */
+#form-container .form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
 /* Estilos para o camp de entrada quando em foco */
 #form-container .form-control:focus {
     box-shadow: none;
+}
+
+/* Estilos para os rotulos flutuantes */
+#form-container .form-floating label {
+    color: #ccc;
 }
 
 /* Estilos para os rotulos flutuantes quando o campo esta em foco*/
@@ -52,11 +64,11 @@ body {
     color: #222; 
 }
 
-/* Estilo para os checkbox marcados e otão de envio do formulario */
+/* Estilo para os checkbox marcados e botão de envio do formulario */
 #form-container .orm-check-input:checked,
 #form-container input[type="submit"] {
     background-color: #00bf57;
-    background-color: #00bf57;
+    border-color: #00bf57;
 }
 
 /* Estilos para botões primarios */
